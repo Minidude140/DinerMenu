@@ -3,6 +3,12 @@
 'Fall 2023
 'Diner Menu
 'https://github.com/Minidude140/DinerMenu.git
+
+'TODO
+'[]Proper Formatting for DailySpecialLabel (set label size, center text)
+'[]Create Diner Name
+'[]Update Menu items (get creative menu items)
+'[]EXTRA: Add multiple menu items and pull from random
 Public Class DinerMenuForm
     'Custom Methods
     ''' <summary>
@@ -17,21 +23,24 @@ Public Class DinerMenuForm
     ''' Updates DailySpecialLabel text to the Soup menu
     ''' </summary>
     Sub DisplaySoup()
-        DailySpecialsLabel.Text = "Soup"
+        DailySpecialsLabel.Text = "~Soup of the Day~" & vbCrLf & vbCrLf &
+        "Locally farmed and Freshly squashed Tomato and Squash soup"
     End Sub
 
     ''' <summary>
     ''' Updates DailySpecialLabel text to the Salad menu
     ''' </summary>
     Sub DisplaySalad()
-        DailySpecialsLabel.Text = "Salad"
+        DailySpecialsLabel.Text = "~Salad of the Day~" & vbCrLf & vbCrLf &
+        "Lettuce, tomatoes, and peppers all drowned in salad dressing"
     End Sub
 
     ''' <summary>
     ''' Updates DailySpecialLabel text to the Fish menu
     ''' </summary>
     Sub DisplayFish()
-        DailySpecialsLabel.Text = "Fish"
+        DailySpecialsLabel.Text = "~Fresh Fish~" & vbCrLf & vbCrLf &
+        "Classic Fish and Chips platter with tar tar sauce and ketchup"
     End Sub
 
     'Event Handlers
