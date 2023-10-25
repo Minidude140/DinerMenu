@@ -69,8 +69,8 @@ Partial Class DinerMenuForm
         'DinerNameLabel
         '
         Me.DinerNameLabel.AutoSize = True
-        Me.DinerNameLabel.Font = New System.Drawing.Font("Gill Sans Ultra Bold Condensed", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DinerNameLabel.Location = New System.Drawing.Point(333, 9)
+        Me.DinerNameLabel.Font = New System.Drawing.Font("Gill Sans Ultra Bold Condensed", 20.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DinerNameLabel.Location = New System.Drawing.Point(296, 9)
         Me.DinerNameLabel.Name = "DinerNameLabel"
         Me.DinerNameLabel.Size = New System.Drawing.Size(192, 46)
         Me.DinerNameLabel.TabIndex = 4
@@ -79,11 +79,13 @@ Partial Class DinerMenuForm
         'DailySpecialsLabel
         '
         Me.DailySpecialsLabel.AutoSize = True
-        Me.DailySpecialsLabel.Location = New System.Drawing.Point(392, 93)
+        Me.DailySpecialsLabel.Font = New System.Drawing.Font("MV Boli", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DailySpecialsLabel.Location = New System.Drawing.Point(86, 78)
         Me.DailySpecialsLabel.Name = "DailySpecialsLabel"
-        Me.DailySpecialsLabel.Size = New System.Drawing.Size(73, 17)
+        Me.DailySpecialsLabel.Size = New System.Drawing.Size(117, 26)
         Me.DailySpecialsLabel.TabIndex = 5
         Me.DailySpecialsLabel.Text = "Menu Item"
+        Me.DailySpecialsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'DinerMenuForm
         '

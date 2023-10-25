@@ -9,7 +9,8 @@ Public Class DinerMenuForm
     ''' Updates DailySpecialLabel text to the welcome screen
     ''' </summary>
     Sub SetDefault()
-        DailySpecialsLabel.Text = "Welcome"
+        DailySpecialsLabel.Text = "~Welcome to 'Diner Name'~" & vbCrLf & vbCrLf &
+        "Please select from our daily options of Soup, Salad, and Fish"
     End Sub
 
     ''' <summary>
