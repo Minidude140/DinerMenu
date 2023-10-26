@@ -78,11 +78,10 @@ Partial Class DinerMenuForm
         '
         'DailySpecialsLabel
         '
-        Me.DailySpecialsLabel.AutoSize = True
         Me.DailySpecialsLabel.Font = New System.Drawing.Font("MV Boli", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DailySpecialsLabel.Location = New System.Drawing.Point(86, 78)
+        Me.DailySpecialsLabel.Location = New System.Drawing.Point(177, 78)
         Me.DailySpecialsLabel.Name = "DailySpecialsLabel"
-        Me.DailySpecialsLabel.Size = New System.Drawing.Size(117, 26)
+        Me.DailySpecialsLabel.Size = New System.Drawing.Size(419, 183)
         Me.DailySpecialsLabel.TabIndex = 5
         Me.DailySpecialsLabel.Text = "Menu Item"
         Me.DailySpecialsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
