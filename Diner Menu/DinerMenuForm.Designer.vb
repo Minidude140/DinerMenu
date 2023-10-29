@@ -22,12 +22,14 @@ Partial Class DinerMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.SoupButton = New System.Windows.Forms.Button()
         Me.SaladButton = New System.Windows.Forms.Button()
         Me.FishButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.DinerNameLabel = New System.Windows.Forms.Label()
         Me.DailySpecialsLabel = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'SoupButton
@@ -37,6 +39,7 @@ Partial Class DinerMenuForm
         Me.SoupButton.Size = New System.Drawing.Size(153, 58)
         Me.SoupButton.TabIndex = 0
         Me.SoupButton.Text = "&Soup"
+        Me.ToolTip1.SetToolTip(Me.SoupButton, "View Dex's Soup of the Day")
         Me.SoupButton.UseVisualStyleBackColor = True
         '
         'SaladButton
@@ -46,6 +49,7 @@ Partial Class DinerMenuForm
         Me.SaladButton.Size = New System.Drawing.Size(153, 58)
         Me.SaladButton.TabIndex = 1
         Me.SaladButton.Text = "S&alad"
+        Me.ToolTip1.SetToolTip(Me.SaladButton, "View Dex's Salad of the Day")
         Me.SaladButton.UseVisualStyleBackColor = True
         '
         'FishButton
@@ -55,6 +59,7 @@ Partial Class DinerMenuForm
         Me.FishButton.Size = New System.Drawing.Size(153, 58)
         Me.FishButton.TabIndex = 2
         Me.FishButton.Text = "&Fish"
+        Me.ToolTip1.SetToolTip(Me.FishButton, "View Dex's Fish Options")
         Me.FishButton.UseVisualStyleBackColor = True
         '
         'ExitButton
@@ -64,6 +69,7 @@ Partial Class DinerMenuForm
         Me.ExitButton.Size = New System.Drawing.Size(153, 58)
         Me.ExitButton.TabIndex = 3
         Me.ExitButton.Text = "E&xit"
+        Me.ToolTip1.SetToolTip(Me.ExitButton, "Leave the Diner")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'DinerNameLabel
@@ -72,9 +78,9 @@ Partial Class DinerMenuForm
         Me.DinerNameLabel.Font = New System.Drawing.Font("Gill Sans Ultra Bold Condensed", 20.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DinerNameLabel.Location = New System.Drawing.Point(296, 9)
         Me.DinerNameLabel.Name = "DinerNameLabel"
-        Me.DinerNameLabel.Size = New System.Drawing.Size(192, 46)
+        Me.DinerNameLabel.Size = New System.Drawing.Size(189, 46)
         Me.DinerNameLabel.TabIndex = 4
-        Me.DinerNameLabel.Text = "Diner Name"
+        Me.DinerNameLabel.Text = "Dex's Name"
         '
         'DailySpecialsLabel
         '
@@ -98,7 +104,7 @@ Partial Class DinerMenuForm
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
         Me.Name = "DinerMenuForm"
-        Me.Text = "Diner Name's Special Menu"
+        Me.Text = "Dex's Diner Special Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,4 +116,5 @@ Partial Class DinerMenuForm
     Friend WithEvents ExitButton As Button
     Friend WithEvents DinerNameLabel As Label
     Friend WithEvents DailySpecialsLabel As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

@@ -3,11 +3,14 @@
 'Fall 2023
 'Diner Menu
 'https://github.com/Minidude140/DinerMenu.git
+'Extra References:
+'https://starwars.fandom.com/wiki/Category:Food_at_Dex%27s_Diner
 
 'TODO
-'[]Proper Formatting for DailySpecialLabel (set label size, center text)
+'[~]Proper Formatting for DailySpecialLabel (set label size, center text)
 '[]Create Diner Name
 '[]Update Menu items (get creative menu items)
+'[]Add Tool Tips
 '[]EXTRA: Add multiple menu items and pull from random
 Public Class DinerMenuForm
     'Custom Methods
@@ -15,8 +18,9 @@ Public Class DinerMenuForm
     ''' Updates DailySpecialLabel text to the welcome screen
     ''' </summary>
     Sub SetDefault()
-        DailySpecialsLabel.Text = "~Welcome to 'Diner Name'~" & vbCrLf & vbCrLf &
-        "Please select from our daily options of Soup, Salad, and Fish"
+        DailySpecialsLabel.Text = "~Welcome to Dex's Diner~" & vbCrLf & vbCrLf &
+            "Take a seat I'll be right with ya" & vbCrLf & vbCrLf &
+        "Please select from Dex's daily options of Soup, Salad, and Fish"
     End Sub
 
     ''' <summary>
@@ -24,7 +28,9 @@ Public Class DinerMenuForm
     ''' </summary>
     Sub DisplaySoup()
         DailySpecialsLabel.Text = "~Soup of the Day~" & vbCrLf & vbCrLf &
-        "Locally farmed and Freshly squashed Tomato and Squash soup"
+        "Creamed Rishi corn soup:" & vbCrLf &
+        "Our Rishi corn comes straight from the Outer Rim weekly, where we locally cream it here at Dex's Diner" & vbCrLf &
+        "-1.7 Credits"
     End Sub
 
     ''' <summary>
@@ -32,7 +38,9 @@ Public Class DinerMenuForm
     ''' </summary>
     Sub DisplaySalad()
         DailySpecialsLabel.Text = "~Salad of the Day~" & vbCrLf & vbCrLf &
-        "Lettuce, tomatoes, and peppers all drowned in salad dressing"
+        "Xizor Salad:" & vbCrLf &
+        "Fresh laser-cut Sizhranian lettuce tossed with Hocekureem Sea salt croutons" & vbCrLf &
+        "- 7.7 credits"
     End Sub
 
     ''' <summary>
@@ -40,7 +48,9 @@ Public Class DinerMenuForm
     ''' </summary>
     Sub DisplayFish()
         DailySpecialsLabel.Text = "~Fresh Fish~" & vbCrLf & vbCrLf &
-        "Classic Fish and Chips platter with tar tar sauce and ketchup"
+        "Rokarian dirt-fish fillets:" & vbCrLf &
+        "This little fish from the Rokaria System is much more appetizing than it's name suggests" & vbCrLf &
+        "-6.1 Credits"
     End Sub
 
     'Event Handlers
