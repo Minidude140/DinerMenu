@@ -6,12 +6,6 @@
 'Extra References:
 'https://starwars.fandom.com/wiki/Category:Food_at_Dex%27s_Diner
 
-'TODO
-'[~]Proper Formatting for DailySpecialLabel (set label size, center text)
-'[]Create Diner Name
-'[]Update Menu items (get creative menu items)
-'[]Add Tool Tips
-'[]EXTRA: Add multiple menu items and pull from random
 Public Class DinerMenuForm
     'Custom Methods
     ''' <summary>
@@ -49,7 +43,7 @@ Public Class DinerMenuForm
     Sub DisplayFish()
         DailySpecialsLabel.Text = "~Fresh Fish~" & vbCrLf & vbCrLf &
         "Rokarian dirt-fish fillets:" & vbCrLf &
-        "This little fish from the Rokaria System is much more appetizing than it's name suggests" & vbCrLf &
+        "This little fish from the Rokaria System are much more appetizing than their name suggests" & vbCrLf &
         "-6.1 Credits"
     End Sub
 
