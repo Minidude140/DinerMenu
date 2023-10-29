@@ -78,9 +78,9 @@ Partial Class DinerMenuForm
         Me.DinerNameLabel.Font = New System.Drawing.Font("Gill Sans Ultra Bold Condensed", 20.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DinerNameLabel.Location = New System.Drawing.Point(296, 9)
         Me.DinerNameLabel.Name = "DinerNameLabel"
-        Me.DinerNameLabel.Size = New System.Drawing.Size(189, 46)
+        Me.DinerNameLabel.Size = New System.Drawing.Size(188, 46)
         Me.DinerNameLabel.TabIndex = 4
-        Me.DinerNameLabel.Text = "Dex's Name"
+        Me.DinerNameLabel.Text = "Dex's Diner"
         '
         'DailySpecialsLabel
         '
@@ -104,7 +104,7 @@ Partial Class DinerMenuForm
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
         Me.Name = "DinerMenuForm"
-        Me.Text = "Dex's Diner Special Menu"
+        Me.Text = "Dex's Diner Daily Special Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

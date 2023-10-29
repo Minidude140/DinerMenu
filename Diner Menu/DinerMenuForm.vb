@@ -43,7 +43,7 @@ Public Class DinerMenuForm
     Sub DisplayFish()
         DailySpecialsLabel.Text = "~Fresh Fish~" & vbCrLf & vbCrLf &
         "Rokarian dirt-fish fillets:" & vbCrLf &
-        "This little fish from the Rokaria System are much more appetizing than their name suggests" & vbCrLf &
+        "These little fish from the Rokaria System are much more appetizing than their name suggests" & vbCrLf &
         "-6.1 Credits"
     End Sub
 
