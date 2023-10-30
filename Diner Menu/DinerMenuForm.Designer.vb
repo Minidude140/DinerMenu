@@ -34,9 +34,10 @@ Partial Class DinerMenuForm
         '
         'SoupButton
         '
-        Me.SoupButton.Location = New System.Drawing.Point(23, 383)
+        Me.SoupButton.Location = New System.Drawing.Point(17, 311)
+        Me.SoupButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SoupButton.Name = "SoupButton"
-        Me.SoupButton.Size = New System.Drawing.Size(153, 58)
+        Me.SoupButton.Size = New System.Drawing.Size(115, 47)
         Me.SoupButton.TabIndex = 0
         Me.SoupButton.Text = "&Soup"
         Me.ToolTip1.SetToolTip(Me.SoupButton, "View Dex's Soup of the Day")
@@ -44,9 +45,10 @@ Partial Class DinerMenuForm
         '
         'SaladButton
         '
-        Me.SaladButton.Location = New System.Drawing.Point(182, 383)
+        Me.SaladButton.Location = New System.Drawing.Point(136, 311)
+        Me.SaladButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SaladButton.Name = "SaladButton"
-        Me.SaladButton.Size = New System.Drawing.Size(153, 58)
+        Me.SaladButton.Size = New System.Drawing.Size(115, 47)
         Me.SaladButton.TabIndex = 1
         Me.SaladButton.Text = "S&alad"
         Me.ToolTip1.SetToolTip(Me.SaladButton, "View Dex's Salad of the Day")
@@ -54,9 +56,10 @@ Partial Class DinerMenuForm
         '
         'FishButton
         '
-        Me.FishButton.Location = New System.Drawing.Point(341, 383)
+        Me.FishButton.Location = New System.Drawing.Point(256, 311)
+        Me.FishButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.FishButton.Name = "FishButton"
-        Me.FishButton.Size = New System.Drawing.Size(153, 58)
+        Me.FishButton.Size = New System.Drawing.Size(115, 47)
         Me.FishButton.TabIndex = 2
         Me.FishButton.Text = "&Fish"
         Me.ToolTip1.SetToolTip(Me.FishButton, "View Dex's Fish Options")
@@ -64,9 +67,10 @@ Partial Class DinerMenuForm
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(643, 383)
+        Me.ExitButton.Location = New System.Drawing.Point(482, 311)
+        Me.ExitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(153, 58)
+        Me.ExitButton.Size = New System.Drawing.Size(115, 47)
         Me.ExitButton.TabIndex = 3
         Me.ExitButton.Text = "E&xit"
         Me.ToolTip1.SetToolTip(Me.ExitButton, "Leave the Diner")
@@ -76,7 +80,8 @@ Partial Class DinerMenuForm
         '
         Me.DinerNameLabel.AutoSize = True
         Me.DinerNameLabel.Font = New System.Drawing.Font("Gill Sans Ultra Bold Condensed", 20.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DinerNameLabel.Location = New System.Drawing.Point(296, 9)
+        Me.DinerNameLabel.Location = New System.Drawing.Point(222, 7)
+        Me.DinerNameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DinerNameLabel.Name = "DinerNameLabel"
         Me.DinerNameLabel.Size = New System.Drawing.Size(188, 46)
         Me.DinerNameLabel.TabIndex = 4
@@ -85,25 +90,30 @@ Partial Class DinerMenuForm
         'DailySpecialsLabel
         '
         Me.DailySpecialsLabel.Font = New System.Drawing.Font("MV Boli", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DailySpecialsLabel.Location = New System.Drawing.Point(93, 85)
+        Me.DailySpecialsLabel.Location = New System.Drawing.Point(70, 69)
+        Me.DailySpecialsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DailySpecialsLabel.Name = "DailySpecialsLabel"
-        Me.DailySpecialsLabel.Size = New System.Drawing.Size(578, 273)
+        Me.DailySpecialsLabel.Size = New System.Drawing.Size(434, 222)
         Me.DailySpecialsLabel.TabIndex = 5
         Me.DailySpecialsLabel.Text = "Menu Item"
         Me.DailySpecialsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'DinerMenuForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(808, 453)
+        Me.ClientSize = New System.Drawing.Size(606, 368)
         Me.Controls.Add(Me.DailySpecialsLabel)
         Me.Controls.Add(Me.DinerNameLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.FishButton)
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "DinerMenuForm"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dex's Diner Daily Special Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
